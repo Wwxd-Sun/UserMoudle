@@ -1,11 +1,8 @@
+source 'https://github.com/CocoaPods/Specs.git'  # 官方库
+source 'https://github.com/Wwxd-Sun/ModuleSpece.git'   # 私有库
 use_frameworks!
 
 target 'UserMoudle_Example' do
   pod 'UserMoudle', :path => '../'
 
-  target 'UserMoudle_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
-  end
 end

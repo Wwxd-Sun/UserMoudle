@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UserMoudle'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of UserMoudle.'
 
 # This description is used to generate tags and improve search results.
@@ -28,10 +28,11 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Wwxd-Sun/UserMoudle.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'UserMoudle/Classes/**/*'
-  
+  s.ios.deployment_target = '10.0'
+  s.swift_version = "5.0"
+  s.source_files = 'UserMoudle/Classes/**/*{.swift}'
+  s.dependency 'ConfigMoudle', '~> 0.0.2'
+  s.dependency 'NetworkMoudle', '~> 0.0.9'
   # s.resource_bundles = {
   #   'UserMoudle' => ['UserMoudle/Assets/*.png']
   # }
